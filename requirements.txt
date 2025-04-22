@@ -1,0 +1,21 @@
+numpy
+matplotlib
+h5py
+# spriteworld==1.0.2
+# gym==0.26.2
+pillow==9.5.0
+pytorch_lightning==2.0.6
+torchvision
+omegaconf
+einops
+wandb
+# fast-pytorch-kmeans
+imageio
+moviepy
+# tensorflow_datasets
+# tensorflow
+# diffusers
+# transformers
+# accelerate
+# lpips==0.1.4
+-e .

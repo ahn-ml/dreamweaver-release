@@ -1,0 +1,39 @@
+# experimental setup
+prefix: "steve-moving-sprites"
+seed: 0
+gpus: 2
+num_workers: 8
+wandb_save_dir: null
+
+# lightning related
+is_verbose: True
+is_logger_enabled: True
+empty_cache: True
+num_sanity_val_steps: 1
+val_every_n_epoch: 1
+strategy: ddp_find_unused_parameters_true
+no_image_logger: False
+n_samples: 5
+
+
+# data module parameters
+dataset_path: null
+dataset: "moving-sprites"
+image_size: 128
+img_channels: 3
+cond_len: 2
+pred_len: 2
+batch_size: 100
+val_batch_size: 100
+max_epochs: 500
+max_steps: -1
+max_gradient_size: 0.5
+num_train_images: null
+num_val_images: null
+custom_root: null
+custum_normalize_mean: null
+custum_normalize_std: null
+stochastic_sample: True
+
+# checkpoint
+ckpt_path: null

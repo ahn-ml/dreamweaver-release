@@ -1,0 +1,37 @@
+# training parameters
+lr_dvae: 3e-4
+lr_enc: 1e-4
+lr_dec: 3e-4
+scheduler_gamma: 0.5
+weight_decay: 0.0
+warmup_steps_pct: 0.05
+decay_steps_pct: 0.5
+
+# architectural parameters
+num_iterations: 3
+num_slots: 4
+num_blocks: 8
+cnn_hidden_size: 64
+slot_size: 768
+mlp_hidden_size: 192
+num_predictor_layers: 1
+num_predictor_heads: 4
+predictor_dropout: 0.0
+num_prototypes: 64
+vocab_size: 4096
+num_decoder_layers: 8
+num_decoder_heads: 4
+d_model: 192
+dropout: 0.1
+
+use_block_coupling: true
+use_sln: false
+use_bi_attn: false
+just_use_mlp: false
+skip_prototype_memory: false
+prototype_memory_on_last_slot: false
+use_deeper_cnn: false
+use_dino: false
+
+tau_start: 1.0
+tau_final: 0.1

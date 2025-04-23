@@ -172,3 +172,5 @@ wandb
 materials
 *.pkl
 *.npy
+
+!misc/*
